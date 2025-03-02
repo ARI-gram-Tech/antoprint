@@ -1,0 +1,229 @@
+/* Dark Theme Variables */
+:root {
+    --primary-color: #a67c52;       /* Muted orange */
+    --primary-hover: #976940;
+    --bg-color: #1e1e1e;            /* Overall background */
+    --section-bg: #2b2b2b;          /* Section background */
+    --text-color: #f0f0f0;          /* Main text color */
+    --subtext-color: #cccccc;       /* Lighter text */
+    --header-bg: rgba(20, 20, 20, 0.95);
+  }
+  
+  /* Global Reset */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+  }
+  
+  /* Header Styling */
+  header {
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: var(--header-bg);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 30px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+  }
+  
+  .logo img {
+    height: 50px;
+  }
+  
+  /* Parent container for the logo and name */
+.logo {
+    display: flex;
+    align-items: center; /* Vertically center the text with the image */
+  }
+  
+  /* Company name styling */
+  .company-name {
+    margin-left: 12px;          /* Space between logo and text */
+    font-size: 1.4rem;          /* Adjust size to your preference */
+    font-weight: 700;           /* Bold for emphasis */
+    color: #44caff;             /* Match the bright blue in your logo */
+    letter-spacing: 1px;        /* Subtle spacing for a clean look */
+    text-transform: uppercase;  /* Matches the style in your logo */
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3); /* Optional subtle shadow */
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+  }
+  
+  nav ul li {
+    margin-left: 20px;
+  }
+  
+  nav ul li a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    transition: color 0.3s ease;
+  }
+  
+  nav ul li a:hover {
+    color: var(--primary-color);
+  }
+  
+  /* Contact Section */
+  .contact {
+    padding: 80px 20px;
+    background: var(--section-bg);
+    text-align: center;
+  }
+  
+  .contact h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: var(--text-color);
+  }
+  
+  .contact p {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: var(--subtext-color);
+  }
+  
+  .contact a {
+    color: var(--primary-color);
+    text-decoration: none;
+  }
+  
+  .contact a:hover {
+    color: var(--primary-hover);
+  }
+  
+  /* Contact Form */
+  .contact form {
+    max-width: 600px;
+    margin: 30px auto 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .contact form input,
+  .contact form textarea {
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    background: #333;
+    color: var(--text-color);
+    font-size: 1rem;
+  }
+  
+  .contact form input::placeholder,
+  .contact form textarea::placeholder {
+    color: var(--subtext-color);
+  }
+  
+  .contact form textarea {
+    resize: vertical;
+    min-height: 150px;
+  }
+  
+  .contact form button {
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    background: var(--primary-color);
+    color: #fff;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+  }
+  
+  .contact form button:hover {
+    background: var(--primary-hover);
+    transform: translateY(-3px);
+  }
+  
+  /* Google Maps Section */
+  .map-section {
+    padding: 60px 20px;
+    background: var(--bg-color);
+    text-align: center;
+  }
+  
+  .map-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: var(--text-color);
+  }
+  
+  .map-container {
+    max-width: 800px;
+    margin: 0 auto;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+  }
+  
+  /* Social Media Section */
+  .social-media {
+    padding: 60px 20px;
+    background: var(--section-bg);
+    text-align: center;
+  }
+  
+  .social-media h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: var(--text-color);
+  }
+  
+  .social-icons a {
+    font-size: 2rem;
+    margin: 0 10px;
+    color: var(--text-color);
+    transition: color 0.3s ease;
+  }
+  
+  .social-icons a:hover {
+    color: var(--primary-color);
+  }
+  
+  /* Footer Styling */
+  footer {
+    background: #141414;
+    color: #bbb;
+    text-align: center;
+    padding: 30px 20px;
+    font-size: 0.9rem;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    header nav ul li {
+      margin-left: 10px;
+    }
+    
+    .contact h1 {
+      font-size: 2rem;
+    }
+    
+    .contact p {
+      font-size: 1rem;
+    }
+    
+    .map-section h2,
+    .social-media h2 {
+      font-size: 1.75rem;
+    }
+  }
+  

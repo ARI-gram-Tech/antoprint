@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - AntoPrint</title>
+  <link rel="stylesheet" href="assets/css/contact.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  <!-- Google reCAPTCHA (Replace YOUR_SITE_KEY with your actual site key) -->
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+          <img src="/assets/images/logo.png" alt="AntoPrint Logo">
+          <span class="company-name">AntoPrint Enterprises</span>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="services.html"><i class="fas fa-cogs"></i> Services</a></li>
+            <li><a href="portfolio.html"><i class="fas fa-briefcase"></i> Portfolio</a></li>
+            <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+          </ul>
+        </nav>
+    </header>
+  <section class="contact">
+    <h1>Contact Us</h1>
+    <p>📞 0729 624 753</p>
+    <p>📧 <a href="mailto:antoprintenterprises98@gmail.com">antoprintenterprises98@gmail.com</a></p>
+
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <input type="text" placeholder="Subject" required>
+      <input type="tel" placeholder="Your Phone Number" required>
+      <textarea placeholder="Your Message" required></textarea>
+      <!-- Google reCAPTCHA -->
+      <div class="g-recaptcha" data-sitekey="YOUR_SITE_KEY"></div>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Google Maps Section -->
+  <section class="map-section">
+    <h2>Our Location</h2>
+    <div class="map-container">
+      <iframe 
+        src="https://maps.google.com/maps?q=Sony+Electronic+Centre,+Luthuli/River+Road+Junction,+Nairobi,+Kenya&t=&z=15&ie=UTF8&iwloc=&output=embed"
+        width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy">
+      </iframe>
+    </div>
+  </section>
+
+  <!-- Social Media Section -->
+  <section class="social-media">
+    <h2>Follow Us</h2>
+    <div class="social-icons">
+      <a href="#" target="_blank"><i class="fab fa-facebook-square"></i></a>
+      <a href="#" target="_blank"><i class="fab fa-twitter-square"></i></a>
+      <a href="#" target="_blank"><i class="fab fa-instagram-square"></i></a>
+      <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 AntoPrint Enterprises | All Rights Reserved</p>
+  </footer>
+</body>
+</html>
